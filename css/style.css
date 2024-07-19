@@ -1,0 +1,94 @@
+.bg{
+    background-image: url('/images/HomeBackground.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: auto;
+    max-width: 100%;
+}
+.bigHeading{
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 500%;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    margin-top: 15%;
+}
+
+.input-cursor {
+    display: inline-block;
+    width: 4px;
+    height: 50px;
+    background-color: rgb(134, 136, 2);
+    margin-left: 8px;
+}
+
+.eduau{
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.secondHeading{
+    font-size: 50px;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.svgcenter{
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    padding: 20px;
+    display: flex;
+}
+.svgcenter svg{
+    padding-left: 20px;
+
+}
+
+.svgcenter svg:hover {
+    opacity: 0.7;
+  }
+  
+
+.buttoncenter{
+    margin-left: auto;
+    margin-right: auto;
+    width: 40px;
+    padding: 10px;
+}
+
+
+.blogbutton{
+    border-radius: 12px;
+    background-color: transparent;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    border: 2px solid black;
+    transition-duration: 0.4s;
+    color: black;
+    font-weight: bold;
+
+}
+.blogbutton:hover {
+    background-color: black; /* Green */
+    color: white;
+  }
+
+@keyframes blink {
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
+  }
+  /* // Then, inside  */
+.input-cursor { 
+  animation: blink .6s linear infinite alternate;
+}
