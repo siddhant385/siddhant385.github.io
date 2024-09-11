@@ -6,6 +6,10 @@
 \*-----------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
 
 :root {
 
@@ -17,7 +21,7 @@
     --coding-green: hsl(120, 76%, 49%);
     --black-texture: hsl(45, 77%, 14%);
     --golden-gold: hsl(47, 100%, 50%);
-    --pinky-pink: #f6adb9;
+    --pinky-pink: hsl(350, 80%, 82%);
     --black-hover:hsl(0, 2%, 8%);
     --black:hsl(210, 5%, 8%);
     --white: hsl(0, 0%, 100%);
@@ -113,8 +117,11 @@
   margin: 2px auto;
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
-
+.main-body section{
+  flex: 1 1 0%;;
+}
 /*-----------------------------------*\
   #HOME SCREEN
 \*-----------------------------------*/
@@ -122,6 +129,7 @@
 .main-body .Home{
   display: flex;
   flex-direction: column;
+  
   
 }
     
@@ -208,7 +216,7 @@
   border-radius: 15px 50px;
   border-style: groove;
   backdrop-filter: blur(10px);
-  margin-bottom: 52px;
+  margin-bottom: 50px;
   
   
 }
@@ -225,8 +233,104 @@
   
 }
 
+/*-----------------------------------*\
+  # ABOUT PAGE
+\*-----------------------------------*/
+.About{
+  width: 94%;
+  margin: auto;
+  
+}
+/* About Heading */
+.About h1{
+  font-family: "Handjet", sans-serif;
+  color:var(--rosy-red);
+  font-size: 80px;
+  text-align: center;
+  margin-bottom: 100px;
+
+}
+/* text info of about */
+.About .about-info{
+  text-align: center;
+  color: var(--rosy-red);
+  width: 50%;
+  margin: auto;
+  margin-bottom: 30px;
+  border: 2px solid var(--rosy-red);
+  padding:20px;
+  backdrop-filter: blur(10px);
+  border-radius: 50px;
+  font-family: "Titillium Web", cursive;
+
+}
 
 
+
+.About .about-info a{
+  color:var(--golden-gold)
+}
+
+
+.About .about-info a:hover{
+  color:black;
+  background-color:var(--rosy-red)
+}
+
+.about-container{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  color: white;
+  width: 80%;
+  padding: 70px;
+  
+}
+.about-box{
+  border: 2px solid var(--rosy-red);
+  text-align: center;
+  border-radius: 10px 20px 10px 20px;
+  backdrop-filter: blur(10px);
+  margin: 0 15px;
+  flex: 1;
+}
+
+
+
+.about-box h2{
+  font-family: "Lobster", sans-serif;
+  color: var(--rosy-red);
+  padding-top: 10px;
+  margin-bottom: 25px;
+  --animate-duration: 5s;
+}
+.about-box ul{
+  text-align: left;
+  padding-left:0;
+  margin-top: 30px;
+  list-style: none;
+}
+/* Animated property of ul */
+
+
+.about-box li{
+  display: flex; /* Use flexbox to align icon and text */
+  align-items: center; /* Vertically align icon with text */
+  font-size: 1rem;
+  /* background: black; */
+  margin: 10px 0;
+  padding: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 8px;
+
+  color: var(--pinky-pink);
+}
+.about-box li i {
+  /* font-size: 1.8rem; */
+  color: var(--golden-gold);
+  margin-right: 15px;
+}
 
 
 
