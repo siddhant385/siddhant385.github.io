@@ -323,13 +323,19 @@
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 8px;
-
+  font-family: "Titillium Web", cursive;
   color: var(--pinky-pink);
 }
 .about-box li i {
   /* font-size: 1.8rem; */
   color: var(--golden-gold);
   margin-right: 15px;
+}
+.about-box li span{
+  color:var(--golden-gold);
+  padding-left: 4px;
+  font-style: italic;
+  font-weight: bold;
 }
 
 
