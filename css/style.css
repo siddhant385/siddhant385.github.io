@@ -389,6 +389,7 @@
 @media screen and (max-width:432px) {
   .main-container {
     width: 100%;
+    
     background-image: url('/images/nice-background.jpg');
     background-size: contain;
     background-color: var(--black);
@@ -428,6 +429,7 @@
   .navbar .tabs a{
     padding: 10px 5px;
   }
+
 
   /*-----------------------------------*\
   #MAIN BODY SECTION
@@ -562,8 +564,152 @@
 
 
   }
-}
+  .About{
+    width: 94%;
+    margin: auto;
+    
+  }
+  /* About Heading */
+  .About h1{
+    font-family: "Handjet", sans-serif;
+    color:var(--rosy-red);
+    font-size: 450%;
+    text-align: center;
+    margin-bottom: 10%;
+  
+  }
+  /* text info of about */
+  .About .about-info{
+    text-align: center;
+    color: var(--rosy-red);
+    width: 50%;
+    margin: auto;
+    margin-bottom: 1em;
+    border: 2px solid var(--rosy-red);
+    padding:20px;
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    font-family: "Titillium Web", cursive;
+  
+  }
+  
+  
+  
+  .About .about-info a{
+    color:var(--golden-gold)
+  }
+  
+  
+  .About .about-info a:hover{
+    color:black;
+    background-color:var(--rosy-red)
+  }
+  
+  .about-container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 0;
+    color: white;
+    width: 90%;
+    padding: 70px;
+    
+  }
+  .about-box{
+    border: 2px solid var(--rosy-red);
+    text-align: center;
+    border-radius: 10px 20px 10px 20px;
+    backdrop-filter: blur(10px);
+    margin: 0.2em;
+    flex: 1;
+  }
+  
+  
+  
+  .about-box h2{
+    font-family: "Lobster", sans-serif;
+    color: var(--rosy-red);
+    padding-top: 10px;
+    margin-bottom: 25px;
+    --animate-duration: 5s;
+  }
+  .about-box ul{
+    text-align: left;
+    padding-left:0;
+    margin-top: 30px;
+    list-style: none;
+  }
+  /* Animated property of ul */
+  
+  
+  .about-box li{
+    display: flex; /* Use flexbox to align icon and text */
+    align-items: center; /* Vertically align icon with text */
+    font-size: 1rem;
+    /* background: black; */
+    margin: 10px 0;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 8px;
+    font-family: "Titillium Web", cursive;
+    color: var(--pinky-pink);
+  }
+  .about-box li i {
+    /* font-size: 1.8rem; */
+    color: var(--golden-gold);
+    margin-right: 15px;
+  }
+  .about-box li span{
+    color:var(--golden-gold);
+    padding-left: 4px;
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  /*-----------------------------------*\
+    #SKILLS PAGE
+  \*-----------------------------------*/
+  
+  .skills{
+    width: 94%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .skills h1{
+    color:white;
+    text-align:center
+  }
+  .skills .container{
+    display: flex;
+    flex-direction: row;
+    margin: 20px auto;
+    color:white;
+    border: 2px solid red;
+    height:30vh;
+    width:90vw;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+  
+  }
+  .container .lang{
+    margin:auto 10px;
+    border: 2px solid green;
+    height:25vh;
+    width:25vw;
+    text-align: center;
+    
+    
+  }
+  
 
-/*-----------------------------------*\
-  #KEYFRAMES ANIMATION
+  /*-----------------------------------*\
+  #MAIN BODY SECTION
 \*-----------------------------------*/
+  
+}
+  /*-----------------------------------*\
+    #KEYFRAMES ANIMATION
+  \*-----------------------------------*/
