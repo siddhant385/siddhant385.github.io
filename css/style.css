@@ -283,7 +283,7 @@
   background-color:var(--rosy-red)
 }
 
-.about-container{
+.about-container-large{
   display: flex;
   flex-direction: row;
   margin: auto;
@@ -317,7 +317,12 @@
   list-style: none;
 }
 /* Animated property of ul */
-
+.about-container-small{
+  display: none;
+}
+.swiper-wrapper{
+  display:none;
+}
 
 .about-box li{
   display: flex; /* Use flexbox to align icon and text */
@@ -406,6 +411,7 @@
     flex-direction: row;
     width: 100%;
     height: 6% !important;
+    z-index: 1000;
   }
   .logoimg{
     content: url('../images/SID-385-mobile.png');
@@ -537,7 +543,7 @@
 
   /* Social Box */
   .social-box {
-    padding: 20px 20px 10px 10px;
+    padding: 20px 20px 5px 5px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -548,6 +554,7 @@
     border-style: groove;
     backdrop-filter: blur(10px);
     margin-bottom: 50px;
+    width: 95%;
 
 
   }
@@ -582,7 +589,7 @@
   .About .about-info{
     text-align: center;
     color: var(--rosy-red);
-    width: 50%;
+    width: 90%;
     margin: auto;
     margin-bottom: 1em;
     border: 2px solid var(--rosy-red);
@@ -604,27 +611,41 @@
     color:black;
     background-color:var(--rosy-red)
   }
-  
-  .about-container{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    margin-bottom: 0;
-    color: white;
-    width: 90%;
-    padding: 70px;
-    
+  .about-container-large{
+    display: none;
   }
+  .about-container-small{
+    display: block;
+    width: 100%;
+  }
+  
+  .about-container-small .item-list{
+    max-width: 100%;
+    width:50%;
+    display: flex;
+    scroll-behavior: smooth;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    margin: auto;
+  }
+  .about-container-small .items{
+    scroll-snap-align: center;
+    width: 100%;
+    justify-content: center;
+  }
+
   .about-box{
     border: 2px solid var(--rosy-red);
     text-align: center;
     border-radius: 10px 20px 10px 20px;
     backdrop-filter: blur(10px);
-    margin: 0.2em;
-    flex: 1;
+    flex: 1 !important;
+    width: 900px;
+    margin:10px 1px;
+    margin-right: 20px;
+    padding:20px;
+    
   }
-  
-  
   
   .about-box h2{
     font-family: "Lobster", sans-serif;
@@ -639,10 +660,13 @@
     margin-top: 30px;
     list-style: none;
   }
+  
+
+  
   /* Animated property of ul */
   
   
-  .about-box li{
+  .about-box-small li{
     display: flex; /* Use flexbox to align icon and text */
     align-items: center; /* Vertically align icon with text */
     font-size: 1rem;
@@ -655,17 +679,19 @@
     font-family: "Titillium Web", cursive;
     color: var(--pinky-pink);
   }
-  .about-box li i {
+  .about-box-small li i {
     /* font-size: 1.8rem; */
     color: var(--golden-gold);
     margin-right: 15px;
   }
-  .about-box li span{
+  .about-box-small li span{
     color:var(--golden-gold);
     padding-left: 4px;
     font-style: italic;
     font-weight: bold;
   }
+ 
+  
   
   /*-----------------------------------*\
     #SKILLS PAGE

@@ -20,6 +20,11 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- 
+     - swipper js link
+    -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.css"/>
+
 
     <!-- 
      - some external js
@@ -159,7 +164,8 @@ window.__h82AlnkH6D91__("WyJwdWItMzk1MDEzNTAxMDk4NjUxOCIsW251bGwsbnVsbCxudWxsLCJ
                     I am also interested in typing and exploring places.Sometimes in my free time I prefer doing ctfs and leetcode
                     problems. When I am free you can find me in <a href="https://play.typeracer.com">Typeracer</a> or <a href="https://leetcode.com">LeetCode</a>
                 </p>
-                <div class="about-container">
+                <div class="about-container-large">
+
                 <div class="about-box" data-aos="animate__rotateInUpLeft">
                     <h2>Aboout Me</h2>
                     <ul data-aos="animate__bounceInUp animate__delay-0.5s">
@@ -196,6 +202,57 @@ window.__h82AlnkH6D91__("WyJwdWItMzk1MDEzNTAxMDk4NjUxOCIsW251bGwsbnVsbCxudWxsLCJ
 
                 </div>
                 </div>
+                <div class="about-container-small">
+                    <div class="carousel-view">
+                        
+                        <!-- Left Button -->
+                        <button id="prev-btn" class="prev-btn"> </button>
+                        
+                        <!-- List Container -->
+                        <div id="item-list" class="item-list">
+                            <!-- Items -->
+                            <div class="about-box" data-aos="animate__rotateInUpLeft">
+                                <h2>Aboout Me</h2>
+                                <ul data-aos="animate__bounceInUp animate__delay-0.5s">
+                                    <li><i class="fas fa-user"></i>My Self Siddhant</li>
+                                    <li><i class="fas fa-graduation-cap"></i>I am Currently a Student</li>
+                                    <li><i class="fas fa-birthday-cake"></i>I am 18 yrs Old</li>
+                                    <li><i class="fas fa-map-marker-alt"></i>I am from India</li>
+                                    <li><i class="fas fa-language"></i>My native language is Hindi</li>
+                                    <li><i class="fas fa-globe"></i>However I can speak English as well</li>
+                                </ul>
+                            </div>
+                            <div class="about-box" data-aos="animate__fadeIn">
+                                <h2>My Hobbies</h2>
+                                <ul data-aos="animate__bounceInUp animate__delay-0.5s">
+                                    <li><i class="fa-solid fa-keyboard"></i>I love typing My Typing speed is about 80wpm</li>
+                                    <li><i class="fa-solid fa-code"></i>I love to code</li>
+                                    <li><i class="fa-solid fa-camera"></i>Photography</li>
+                                    <li><i class="fa-solid fa-futbol"></i>Sports <i class="fa-solid fa-baseball-bat-ball"></i></li>
+                                    <li><i class="fa-solid fa-plane"></i>Traveling</li>
+                                </ul>
+            
+                            </div>
+                            <div class="about-box" data-aos="animate__rotateInUpLeft">
+                                <h2>My Favourites</h2>
+                                <ul data-aos="animate__bounceInUp animate__delay-0.9s">
+                                    <li><i class="fa-solid fa-robot"></i>Favorite MCU Character: <span>Iron Man</span></li>
+                                    <li><i class="fa-solid fa-film"></i>Favorite Movie: <span>The Fight Club</span></li>
+                                    <li><i class="fa-solid fa-plane-departure"></i>Dream place to visit: <span>Machu Picchu</span></li>
+                                    <li><i class="fa-solid fa-medal"></i>Favorite Player: <span>MSD</span></li>
+                                    <li><i class="fa-solid fa-guitar"></i>Favorite Singer: <span>Avicii</span></li>
+                                    <li><i class="fa-solid fa-people-group"></i>Favorite IPL Team: <span>CSK</span></li>
+                                    
+                                </ul>
+            
+                            </div>
+                        </div>
+                        
+                        <!-- Right Button -->
+                            <button id="next-btn" class="next-btn"> </button>
+                        </div>
+                </div>
+
 
             </section>
             <section id="Skills" class="skills">
@@ -249,6 +306,12 @@ window.__h82AlnkH6D91__("WyJwdWItMzk1MDEzNTAxMDk4NjUxOCIsW251bGwsbnVsbCxudWxsLCJ
     <script src="https://kit.fontawesome.com/6867d03043.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- 
+      - SWIPER BUNDLE JS
+    -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script>
       AOS.init({
         useClassNames: true,
@@ -256,6 +319,28 @@ window.__h82AlnkH6D91__("WyJwdWItMzk1MDEzNTAxMDk4NjUxOCIsW251bGwsbnVsbCxudWxsLCJ
         animatedClassName: 'animate__animated',
       });
     </script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'vertical',
+            loop: false,
+          
+            // If we need pagination
+            pagination: {
+              el: '.swiper-pagination',
+            },
+          
+            // Navigation arrows
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+          
+            // And if we need scrollbar
+          });
+          
+    </script>
+    
   
     <script src="javascript/script.js"></script>
 
