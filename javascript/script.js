@@ -69,5 +69,5 @@ function Progress(id,percent){
   Progress('javascript-percent',document.getElementById('javascript-percent').innerHTML.split('%')[0]/100)
   Progress('bash-percent',document.getElementById('bash-percent').innerHTML.split('%')[0]/100)
   
-  
+  //comment
   
