@@ -775,7 +775,7 @@
   }
   
   .skills h1{
-    color:white;
+    color:var(--golden-gold);
     text-align:center
   }
   .skills .container{
